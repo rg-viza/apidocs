@@ -199,6 +199,15 @@ Retrieve the details of the authenticated Network.
     + Attributes
         + networks (array[Network Wrapper])
 
+# Group Reference
+
+## Terms [/reference/terms/get/{country}/{network_id}]
+
+### List Terms [GET]
+
+Given a country code and network id, pull the entity terms/conditions and network terms/conditions for a new publisher
+on that network within that country. These are required to create a new publisher and assign publisher to a network via API
+
 # Group Publisher
 
 A User can create one or more Publisher accounts. A User can also have access to one or more Publisher accounts - this
@@ -227,6 +236,7 @@ Create a new Publisher account attached to the authenticated User.
         + entity_id: 1 (required) - The relevant entity id
         + network_id: 1l1000003 (required) - The relevant network id
         + entity_terms_id: 252 (required) - The terms and conditions for the specified entity
+        + network_terms_id: 77 (required) - The terms and conditions for the specified network
 
 + Response 200 (application/json; charset=utf-8)
     + Attributes (Publisher Wrapper)
